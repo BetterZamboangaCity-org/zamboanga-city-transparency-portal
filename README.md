@@ -1,4 +1,26 @@
-# Transparency Portal
+# Zamboanga City Transparency Portal
+
+This fork is configured for **Zamboanga City**, operated by
+[Chex](https://github.com/RALPH22222). Its configured deployment URL is
+<https://zamboanga-city-transparency-portal.vercel.app>.
+
+It follows the Zamboanga City 1st and 2nd District Engineering Offices and searches
+for `Zamboanga City`. These are national budget records associated with the city,
+not the city government's own annual budget or actual spending.
+
+The scope was checked against the live API on November 1, 2026: **120 FY 2027
+project lines**, after **20 documented exclusions**, and **994 program families**
+in the 2020–2026 enacted budgets. The About page publishes each exclusion and its
+reason. A region filter is deliberately omitted: two Central Office projects
+explicitly name Zamboanga City but are tagged NCR in the source.
+
+Search matches are not verified geographic boundaries. Inter-city highway names
+can match even when a section lies outside the city. Older office totals missing
+from the API remain missing, never zero. Review new search matches when the API
+changes; `npm run setup` overwrites the reviewed configuration and exclusions.
+
+See [the repository audit](docs/audit.md) for branch comparisons, verified bugs,
+UI findings, and validation results. The original template documentation follows.
 
 A small, forkable website that shows citizens **every FY 2027 budget project** for one
 LGU (province, city or municipality) or one DPWH district engineering office: what the
@@ -11,8 +33,8 @@ program or project in any department whose name names the place.
   <img src="docs/poster/create-your-own-transparency-portal-1080x1080.png" alt="Create your own transparency portal: for your LGU or DPWH district office. A sample portal for the Province of Bohol, and three steps: fork, run npm run setup, deploy." width="540">
 </p>
 
-**See a sample:** [transparency-portal.bettergov.workers.dev](https://transparency-portal.bettergov.workers.dev),
-the Province of Bohol, built from this repository as it is.
+**Upstream sample:** [transparency-portal.bettergov.workers.dev](https://transparency-portal.bettergov.workers.dev),
+the Province of Bohol. This fork uses the Zamboanga City configuration above.
 
 It has no backend and no database. Everything comes from the public
 [BetterGov.ph Budget API](https://budget.bettergov.ph/docs), the same data behind
