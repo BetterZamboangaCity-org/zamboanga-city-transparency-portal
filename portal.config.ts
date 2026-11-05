@@ -14,8 +14,12 @@ export default defineConfig({
   kind: 'city',
   name: 'Zamboanga City',
   shortName: 'Zamboanga City',
-  operator: { name: 'Chex', url: 'https://github.com/RALPH22222' },
-  siteUrl: 'https://zamboanga-city-transparency-portal.vercel.app',
+  operator: {
+    name: 'Chex',
+    url: 'https://github.com/RALPH22222',
+    contributor: { name: 'friends', url: 'https://github.com/BetterZamboangaCity-org' },
+  },
+  siteUrl: 'https://transparency.betterzamboangacity.org',
   scope: {
     offices: [
       'Zamboanga City 1st District Engineering Office',

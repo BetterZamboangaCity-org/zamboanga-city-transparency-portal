@@ -53,7 +53,12 @@ export interface PortalConfig {
   /** Short form for headings: "Bohol". Defaults to `name`. */
   shortName?: string;
   /** Who runs this copy of the portal. Shown in the footer. */
-  operator: { name: string; url?: string; email?: string };
+  operator: {
+    name: string;
+    url?: string;
+    email?: string;
+    contributor?: { name: string; url?: string };
+  };
   /** Optional logo: a path under public/ ("/brand/lgu-seal.png") or a URL. */
   logo?: string;
   /** Canonical URL of this deployment, for link previews. */
@@ -105,6 +110,7 @@ export function configProblems(config: PortalConfig): string[] {
   }
   if (!config.name.trim()) problems.push('name is empty.');
   if (!config.operator?.name?.trim()) problems.push('operator.name is empty: say who runs this portal.');
+  if (config.operator?.contributor && !config.operator.contributor.name.trim()) problems.push('operator.contributor.name is empty.');
   const { offices = [], places = [], districts = [], exclude = [] } = config.scope;
   if (!offices.length && !places.length) {
     problems.push('scope needs at least one office or place, or the portal has no projects.');

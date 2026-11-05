@@ -164,8 +164,9 @@ individually or together. Re-run `$impeccable audit` after fixes.
 
 ## City configuration and checks
 
-Configured operator: Chex, linking to `https://github.com/RALPH22222`.
-Canonical URL: `https://zamboanga-city-transparency-portal.vercel.app`.
+Configured operator: Chex and friends, linking to `https://github.com/RALPH22222` and
+`https://github.com/BetterZamboangaCity-org` respectively.
+Canonical URL: `https://transparency.betterzamboangacity.org`.
 Both published office names and district IDs were verified against the live API.
 
 The scope contains 120 FY 2027 lines: 113 DPWH, four farm-to-market roads, and three

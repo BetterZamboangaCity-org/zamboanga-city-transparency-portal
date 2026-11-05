@@ -183,7 +183,7 @@ function html(f: Format, d: Awaited<ReturnType<typeof loadData>>, shots: { deskt
     'Open the source pages. Check the figures for yourself.',
   ];
   const fine =
-    `<strong>Community portal by ${esc(config.operator.name)}. Built with BetterGov.PH.</strong> Data: BetterGov.PH Budget API, 2027 NEP and House Bill 10858 (third reading), as of ${d.asOf}. ` +
+    `<strong>Community portal by ${esc(config.operator.name)}${config.operator.contributor ? ` and ${esc(config.operator.contributor.name)}` : ''}. Built with BetterGov.PH.</strong> Data: BetterGov.PH Budget API, 2027 NEP and House Bill 10858 (third reading), as of ${d.asOf}. ` +
     `Amounts are as published, not spending. A project in one version only is a candidate to check, not a finding.`;
 
   return `<!doctype html><html><head><meta charset="utf-8">

@@ -1,8 +1,8 @@
 # Zamboanga City Transparency Portal
 
 This fork is configured for **Zamboanga City**, operated by
-[Chex](https://github.com/RALPH22222). Its configured deployment URL is
-<https://zamboanga-city-transparency-portal.vercel.app>.
+[Chex](https://github.com/RALPH22222) and [friends](https://github.com/BetterZamboangaCity-org). Its configured deployment URL is
+<https://transparency.betterzamboangacity.org/>.
 
 It follows the Zamboanga City 1st and 2nd District Engineering Offices and searches
 for `Zamboanga City`. These are national budget records associated with the city,

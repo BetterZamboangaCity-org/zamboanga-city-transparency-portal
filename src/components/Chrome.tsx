@@ -109,6 +109,13 @@ export function Footer() {
               ) : (
                 config.operator.name
               )}
+              {config.operator.contributor && (
+                <> and {config.operator.contributor.url ? (
+                  <a href={config.operator.contributor.url} target="_blank" rel="noopener">
+                    {config.operator.contributor.name}
+                  </a>
+                ) : config.operator.contributor.name}</>
+              )}
               {config.operator.email && (
                 <> · <a href={`mailto:${config.operator.email}`}>{config.operator.email}</a></>
               )}
